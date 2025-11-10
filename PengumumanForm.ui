@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PengumumanForm</class>
+ <widget class="QWidget" name="PengumumanForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>420</height></rect>
+  </property>
+  <property name="windowTitle"><string>Form Pengumuman (Sederhana)</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0"><widget class="QLabel" name="lbl_0"><property name="text"><string>Id Pengumuman</string></property></widget></item>
+     <item row="0" column="1"><widget class="QSpinBox" name="id_pengumuman"><property name="enabled"><bool>false</bool></property><property name="maximum"><number>2147483647</number></property></widget></item>
+     <item row="1" column="0"><widget class="QLabel" name="lbl_1"><property name="text"><string>Sub Jenis</string></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="sub_jenis"/></item>
+     <item row="2" column="0"><widget class="QLabel" name="lbl_2"><property name="text"><string>Isi Pengumuman</string></property></widget></item>
+     <item row="2" column="1"><widget class="QLineEdit" name="isi_pengumuman"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Simpan</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Bersihkan</string></property></widget></item>
+     <item>
+      <spacer name="hspacer">
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       <property name="sizeHint"><size><width>40</width><height>20</height></size></property>
+      </spacer>
+     </item>
+     <item><widget class="QPushButton" name="btnClose"><property name="text"><string>Tutup</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

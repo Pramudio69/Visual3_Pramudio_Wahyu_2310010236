@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JemaatForm</class>
+ <widget class="QWidget" name="JemaatForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>420</height></rect>
+  </property>
+  <property name="windowTitle"><string>Form Jemaat (Sederhana)</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0"><widget class="QLabel" name="lbl_0"><property name="text"><string>Id Jemaat</string></property></widget></item>
+     <item row="0" column="1"><widget class="QSpinBox" name="id_jemaat"><property name="enabled"><bool>false</bool></property><property name="maximum"><number>2147483647</number></property></widget></item>
+     <item row="1" column="0"><widget class="QLabel" name="lbl_1"><property name="text"><string>Nama Jemaat</string></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="nama_jemaat"/></item>
+     <item row="2" column="0"><widget class="QLabel" name="lbl_2"><property name="text"><string>Jk Jemaat</string></property></widget></item>
+     <item row="2" column="1"><widget class="QComboBox" name="jk_jemaat"> <item><property name="text"><string>l</string></property></item>
+</widget></item>
+     <item row="3" column="0"><widget class="QLabel" name="lbl_3"><property name="text"><string>Alamat Jemaat</string></property></widget></item>
+     <item row="3" column="1"><widget class="QLineEdit" name="alamat_jemaat"/></item>
+     <item row="4" column="0"><widget class="QLabel" name="lbl_4"><property name="text"><string>Tempat Lahir</string></property></widget></item>
+     <item row="4" column="1"><widget class="QLineEdit" name="tempat_lahir"/></item>
+     <item row="5" column="0"><widget class="QLabel" name="lbl_5"><property name="text"><string>Tgl Lahir</string></property></widget></item>
+     <item row="5" column="1"><widget class="QDateEdit" name="tgl_lahir"><property name="calendarPopup"><bool>true</bool></property></widget></item>
+     <item row="6" column="0"><widget class="QLabel" name="lbl_6"><property name="text"><string>No Hp</string></property></widget></item>
+     <item row="6" column="1"><widget class="QLineEdit" name="no_hp"/></item>
+     <item row="7" column="0"><widget class="QLabel" name="lbl_7"><property name="text"><string>Status Dalam Keluarga</string></property></widget></item>
+     <item row="7" column="1"><widget class="QLineEdit" name="status_dalam_keluarga"/></item>
+     <item row="8" column="0"><widget class="QLabel" name="lbl_8"><property name="text"><string>Wilayah</string></property></widget></item>
+     <item row="8" column="1"><widget class="QLineEdit" name="wilayah"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item><widget class="QPushButton" name="btnSave"><property name="text"><string>Simpan</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnClear"><property name="text"><string>Bersihkan</string></property></widget></item>
+     <item>
+      <spacer name="hspacer">
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       <property name="sizeHint"><size><width>40</width><height>20</height></size></property>
+      </spacer>
+     </item>
+     <item><widget class="QPushButton" name="btnClose"><property name="text"><string>Tutup</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
