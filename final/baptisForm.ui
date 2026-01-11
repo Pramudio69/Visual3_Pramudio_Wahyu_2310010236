@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormBaptis</class>
+ <widget class="QWidget" name="FormBaptis">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data Baptis</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelTitle">
+     <property name="text">
+      <string>&lt;h2&gt;Form Data Baptis&lt;/h2&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupInput">
+       <property name="title">
+        <string>Input</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayoutInput">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelId">
+            <property name="text">
+             <string>ID Baptis (kosong = auto)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="EditId"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelJemaat">
+            <property name="text">
+             <string>Jemaat</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="ComboJemaat"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelAyah">
+            <property name="text">
+             <string>Nama Ayah</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="EditAyah"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelIbu">
+            <property name="text">
+             <string>Nama Ibu</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="EditIbu"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="labelWali">
+            <property name="text">
+             <string>Nama Wali</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="EditWali"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="labelTgl">
+            <property name="text">
+             <string>Tanggal Baptis</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QDateEdit" name="DateTglBaptis">
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="labelPelayan">
+            <property name="text">
+             <string>Pelayan</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="EditPelayan"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="labelSurat">
+            <property name="text">
+             <string>Surat Baptis</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="EditSurat"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridButtons">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="BtnSimpan">
+            <property name="text">
+             <string>SIMPAN</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="BtnUbah">
+            <property name="text">
+             <string>UBAH</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="BtnHapus">
+            <property name="text">
+             <string>HAPUS</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="BtnBersih">
+            <property name="text">
+             <string>BERSIH</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="spacerInput">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>80</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupData">
+       <property name="title">
+        <string>Data</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayoutData">
+        <item>
+         <layout class="QHBoxLayout" name="layoutCariCetak">
+          <item>
+           <widget class="QLabel" name="labelCari">
+            <property name="text">
+             <string>Cari:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineCari">
+            <property name="placeholderText">
+             <string>Ketik untuk mencari...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCetak">
+            <property name="text">
+             <string>CETAK PDF</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblBaptis">
+          <property name="columnCount">
+           <number>9</number>
+          </property>
+          <property name="rowCount">
+           <number>0</number>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ID Jemaat</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Nama Jemaat</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ayah</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ibu</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Wali</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Tgl Baptis</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Pelayan</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Surat</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
